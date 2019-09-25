@@ -19,14 +19,23 @@ html,body {
     padding: 10rem 20px 5rem;
     color: #f5f5f5;
 }
-label.sr-only{
+label.sr-only{  
 	position: relative;
 }
 .admin-login button,
-input.form-control{
+.admin-login .form-control{
 	border-radius: .85rem; 
 	height: 2.85rem;
 }
 input.form-control:focus{
-	border-color:#3A2999;
+	border-color:gray;
+}
+@media screen and (max-width:600px){
+    .admin-login  {	max-width: 100%;}
+}
+.admin-signup{
+	margin: auto;
+}
+.signup-title {  
+	margin-top: 1.5rem;;
 }

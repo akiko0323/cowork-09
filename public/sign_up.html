@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+ 	<head>
+ 		<meta charset="utf-8">
+ 		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+ 		<title>B2B-signup</title>
+ 		<link rel="stylesheet" type="text/css" href="style_admin.css" >
+ 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+ 		<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+ 	</head>
+ 	<body>
+ 		<div class="container">
+ 			<div class="row">	
+ 				<div class="col-4 admin-login text-center">
+	 				<img src="" alt="LOGO">
+	 				<h3 class="admin-title spacing-1">會員登入</h3>
+				  <label for="inputName" class="sr-only">會員登入</label>
+				  <input type="UserName" id="inputName" class="form-control" placeholder="UserName" required autofocus>
+				  <label for="inputPassword" class="sr-only">Password</label>
+				  <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+				  <div class="checkbox mt-3">
+				    <label class="spacing-2 float-right"><input type="checkbox" value="remember-me" class="mr-1">記住帳號密碼</label>
+				  </div>
+				  <button class="btn btn-lg btn-primary btn-block mt-3" type="submit">登入</button>
+ 				</div>
+ 				<div class="col-7 admin-signup text-center">
+	 				<h3 class="admin-title spacing-1">會員申請</h3>
+		 			<form class="signup-comp">
+					  <h5 class="signup-title">公司資料</h5>
+					  <input type="input" id="inputNumber" class="form-control" placeholder="統一編號" required="">
+					  <input type="input" id="inputCompName" class="form-control" placeholder="公司名稱" required="">
+					  <input type="input" id="inputManager" class="form-control" placeholder="公司負責人" required="">
+					  <input type="Add" id="inputCompAdd" class="form-control" placeholder="公司地址" required="">
+					</form>
+					<form class="signup-person">
+					  <h5 class="signup-title">個人資料</h5>
+					  <input type="input" id="inputCTname" class="form-control" placeholder="中文姓名" required="">
+					  <input type="input" id="inputENname" class="form-control" placeholder="英文姓名" required="">
+					  <input type="input" id="inputCTname" class="form-control" placeholder="手機號碼" required="">
+					  <input type="email" id="inputEmail" class="form-control" placeholder="電子地址" required autofocus>
+				  	  <input type="password" id="inputPassword" class="form-control" placeholder="自訂密碼" required>
+				  	  <input type="password" id="ConfrimPassword" class="form-control" placeholder="確認密碼" required>
+					  <input type="input" id="inputJT" class="form-control" placeholder="職稱" required="">
+					  <button class="btn btn-primary btn-block" type="submit">Sign UP</button>
+					</form>		
+	 			</div>	
+	 		</div>
+		</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>							
+	</body>
+</html>
