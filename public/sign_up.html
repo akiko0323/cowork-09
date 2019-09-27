@@ -11,8 +11,10 @@
  	<body>
  		<div class="container">
  			<div class="row">	
- 				<div class="col-4 admin-login text-center">
-	 				<img src="" alt="LOGO">
+ 				<div class="col-md-4 admin-login text-center">
+ 					<div class="admin-signup">
+	 					<img src="../img/logo-mini.png" alt="LOGO" width="96px">
+	 				</div>
 	 				<h3 class="admin-title spacing-1">會員登入</h3>
 				  <label for="inputName" class="sr-only">會員登入</label>
 				  <input type="UserName" id="inputName" class="form-control" placeholder="UserName" required autofocus>
@@ -21,19 +23,19 @@
 				  <div class="checkbox mt-3">
 				    <label class="spacing-2 float-right"><input type="checkbox" value="remember-me" class="mr-1">記住帳號密碼</label>
 				  </div>
-				  <button class="btn btn-lg btn-primary btn-block mt-3" type="submit">登入</button>
+				  <button class="btn btn-lg btn-primary btn-block mt-3 spacing-2" type="submit">登入</button>
  				</div>
- 				<div class="col-7 admin-signup text-center">
+ 				<div class="col-md-7 admin-signup text-center">
 	 				<h3 class="admin-title spacing-1">會員申請</h3>
 		 			<form class="signup-comp">
-					  <h5 class="signup-title">公司資料</h5>
+					  <h5 class="signup-title spacing-2">公司資料</h5>
 					  <input type="input" id="inputNumber" class="form-control" placeholder="統一編號" required="">
 					  <input type="input" id="inputCompName" class="form-control" placeholder="公司名稱" required="">
 					  <input type="input" id="inputManager" class="form-control" placeholder="公司負責人" required="">
 					  <input type="Add" id="inputCompAdd" class="form-control" placeholder="公司地址" required="">
 					</form>
 					<form class="signup-person">
-					  <h5 class="signup-title">個人資料</h5>
+					  <h5 class="signup-title spacing-2">個人資料</h5>
 					  <input type="input" id="inputCTname" class="form-control" placeholder="中文姓名" required="">
 					  <input type="input" id="inputENname" class="form-control" placeholder="英文姓名" required="">
 					  <input type="input" id="inputCTname" class="form-control" placeholder="手機號碼" required="">
@@ -41,7 +43,7 @@
 				  	  <input type="password" id="inputPassword" class="form-control" placeholder="自訂密碼" required>
 				  	  <input type="password" id="ConfrimPassword" class="form-control" placeholder="確認密碼" required>
 					  <input type="input" id="inputJT" class="form-control" placeholder="職稱" required="">
-					  <button class="btn btn-primary btn-block" type="submit">Sign UP</button>
+					  <button class="btn btn-primary btn-block spacing-2" type="submit">送出申請</button>
 					</form>		
 	 			</div>	
 	 		</div>

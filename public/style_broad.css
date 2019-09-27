@@ -1,0 +1,13 @@
+.bg-gray{ 
+  background: rgba(1,1,1,.5);
+  border-radius: 1rem;
+}
+.bg-white{ 
+  background: rgba(0,0,0,.8);
+}
+.result-table{
+  color: white;
+}
+.t-table-gray th{
+  background: #787878;
+}

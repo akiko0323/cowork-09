@@ -34,8 +34,10 @@ input.form-control:focus{
     .admin-login  {	max-width: 100%;}
 }
 .admin-signup{
-	margin: auto;
+	margin: 2rem auto 0;
+	color: #f5f5f5;
 }
 .signup-title {  
-	margin-top: 1.5rem;;
+	margin-top: 1.5rem;
 }
+

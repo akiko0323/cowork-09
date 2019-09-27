@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Dashbroad</title>
+    <link rel="stylesheet" type="text/css" href="style_admin.css" >
+    <link rel="stylesheet" type="text/css" href="style_broad.css" >
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    
+    <nav class="slider-bar">
+      <span class="fas fa-search btn-icon__inner"></span>
+    </nav>
+    <main>
+      <div class="container">
+        <div class="bg-gray text-white p-5 mt-5">
+            <form>
+            <div class="d-md-flex align-items-end">                           
+                <div class="mb-4 mr-4">
+                     <div class="form-group m-0">
+                        <label for="agent" class="m-0"><i class="fas fa-building"></i> 旅行社</label>
+                        <input type="text" id="agent" class="form-control" placeholder="旅行社">
+                    </div>
+                </div>
+                <div class="mb-4 mr-4">
+                     <div class="form-group m-0">
+                        <label for="tripDuration" class="m-0"><i class="fas fa-map-marked"></i> 旅遊天數</label>
+                        <input type="text" id="tripDuration" class="form-control" placeholder="輸入天數">
+                    </div>
+                </div>
+                <div class="mb-4 mr-4">
+                     <div class="form-group m-0">
+                        <label for="tripKeyword" class="m-0"><i class="fas fa-globe-americas"></i> 關鍵字</label>
+                        <input type="text" id="tripKeyword" class="form-control" placeholder="關鍵字">
+                    </div>
+                </div>                            
+            </div>
+            <div class="d-md-flex align-items-end">
+                <div class="flex-fill mb-2 mr-2">
+                     <div class="form-group m-0">
+                        <label for="priceRangeStart" class="m-0"><i class="fas fa-dollar-sign"></i> 價格</label>
+                        <input type="text" id="priceRangeStart" class="form-control mb-2" placeholder="最低價">
+                     </div>
+                </div>
+                <div class="flex-fill mb-2 mr-2">
+                    <div class="form-group m-0">
+                        <label for="priceRangeEnd" class="m-0"></label>
+                        <input type="text" id="priceRangeEnd" class="form-control mb-2" placeholder="最高價">
+                    </div>
+                </div>
+                <div class="flex-fill mb-2 mr-2">
+                    <button type="button" class="btn btn-primary mb-2 mr-2 w-100" id="searchProdutBtn" onclick="searchProduct(this)">尋找旅程</button>
+                </div>
+            </div>
+            </form>
+        </div>
+        <div class="pb-5"></div>
+        <div class="result-table">
+            <div class="d-md-flex align-items-center">
+                <div class="flex-fill"><h2 class="t-title">搜尋結果<small id="searchKeyword"></small></h2></div>
+                <div class="flex-fill text-right "><a href="#" id="searchResultCount" class="text-white">999筆</a></div>
+            </div>
+        </div>
+        <table class="table table-bordered table-hover text-center t-table-gray">
+            <thead class="thead-dark">
+                <tr>
+                    <th width="10%">總天數</th>
+                    <th>圑名</th>
+                    <th width="20%">同業價</th>
+                    <th width="20%">旅行社</th>
+                </tr>
+            </thead>
+            <tbody id="tripResult">
+                 <tr>
+                    <td>3</td>
+                    <td class="text-left"><a href="#">戶外溫泉套餐3天日遊</a></td>
+                    <td>$19,990<small>起</small></td>
+                    <td>鄉村旅行社</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td class="text-left"><a href="#">日本夏季廟會包和服租免自費</a></td>
+                    <td>$15,990<small>起</small></td>
+                    <td>鄉村旅行社</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td class="text-left"><a href="#">日式手作玩物初體驗，包住包晚餐</a></td>
+                    <td>$19,990<small>起</small></td>
+                    <td>鄉村旅行社</td>
+                </tr> 
+            </tbody>
+        </table>
+      </div>
+    </main>
+    
+
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>              
+  </body>
+</html>
