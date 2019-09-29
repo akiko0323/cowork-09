@@ -8,6 +8,15 @@
     <link rel="stylesheet" type="text/css" href="nav.css" >
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <script type="text/javascript">
+      $(document).ready(function(){
+    $('ul.navbar-nav li').hover(function() {
+      $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(200);
+    }, function() {
+      $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(200);
+    });  
+})
+    </script>
   </head>
   <body>
     <header>
@@ -16,32 +25,40 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        
+        <button class="navbar-toggler" type="button">
+          <span class="navbar-login-icon"></span>
+        </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbar">
           <ul class="navbar-nav">
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown p-2">
             <a class="nav-link" href="#" id="DropdownMenu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">關於公會
             </a>            
-            <div class="dropdown-menu intromenu" aria-labelledby="DropdownMenuLink1">
-              <div class="row">
-                <div class="col-lg-6 col-bd">
-                  <span class="dropdown-item-text">公會介紹</span>
-                  <a class="dropdown-item" href="#">理事長BLAHBLAH</a>
-                  <a class="dropdown-item" href="#">公會簡介</a>
-                  <a class="dropdown-item" href="#">公會章程</a>
-                  <a class="dropdown-item" href="#">會所介紹</a>
+            <div class="dropdown-menu" aria-labelledby="DropdownMenuLink1">
+              <div class="row m-0">
+                <div class="col border-right">
+                  <ul class="menu-nav">
+                    <li class="dropdown-item-text">公會介紹</li>
+                    <div class="dropdown-divider"></div>
+                    <li><a class="dropdown-item" href="#">理事長BLAHBLAH</a></li>
+                    <li><a class="dropdown-item" href="#">公會簡介</a></li>
+                    <li><a class="dropdown-item" href="#">公會章程</a></li>
+                    <li><a class="dropdown-item" href="#">會所介紹</a></li>
+                  </ul>
                 </div>
-                <div class="col-lg-6">
-                  <span class="dropdown-item-text">公會組織</span>
-                  <a class="dropdown-item" href="#">理事會</a>
-                  <a class="dropdown-item" href="#">監事會</a>
-                  <a class="dropdown-item" href="#">委員會</a>
-                  <a class="dropdown-item" href="#">會務窗口</a>
+                <div class="col">
+                  <ul class="menu-nav">
+                    <li class="dropdown-item-text">公會組織</li>
+                    <div class="dropdown-divider"></div>
+                    <li><a class="dropdown-item" href="#">理事會</a></li>
+                    <li><a class="dropdown-item" href="#">監事會</a></li>
+                    <li><a class="dropdown-item" href="#">委員會</a></li>
+                    <li><a class="dropdown-item" href="#">會務窗口</a></li>
+                  </ul>
                 </div>
               </div>
             </div>
            </li><!--下拉選單1-->
-           <li class="nav-item dropdown">
+           <li class="nav-item dropdown p-2">
             <a class="nav-link" href="#" id="DropdownMenu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">關於公會
             </a>
             <div class="dropdown-menu" aria-labelledby="DropdownMenuLink1">
@@ -51,15 +68,44 @@
               <a class="dropdown-item" href="#">公會章程</a>
               <a class="dropdown-item" href="#">會所介紹</a>
             </div>
-           </li><!--下拉選單1-->
-        
-       
-        
+           </li><!--下拉選單2-->
+           <li class="nav-item dropdown p-2">
+            <a class="nav-link" href="#" id="DropdownMenu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">關於公會
+            </a>
+            <div class="dropdown-menu" aria-labelledby="DropdownMenuLink1">
+              <span class="dropdown-item-text">公會介紹</span>
+              <a class="dropdown-item" href="#">理事長BLAHBLAH</a>
+              <a class="dropdown-item" href="#">公會簡介</a>
+              <a class="dropdown-item" href="#">公會章程</a>
+              <a class="dropdown-item" href="#">會所介紹</a>
+            </div>
+           </li><!--下拉選單3-->
+           <li class="nav-item dropdown p-2">
+            <a class="nav-link" href="#" id="DropdownMenu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">關於公會
+            </a>
+            <div class="dropdown-menu" aria-labelledby="DropdownMenuLink1">
+              <span class="dropdown-item-text">公會介紹</span>
+              <a class="dropdown-item" href="#">理事長BLAHBLAH</a>
+              <a class="dropdown-item" href="#">公會簡介</a>
+              <a class="dropdown-item" href="#">公會章程</a>
+              <a class="dropdown-item" href="#">會所介紹</a>
+            </div>
+           </li><!--下拉選單4-->
+           <li class="nav-item dropdown p-2">
+            <a class="nav-link" href="#" id="DropdownMenu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">關於公會
+            </a>
+            <div class="dropdown-menu" aria-labelledby="DropdownMenuLink1">
+              <span class="dropdown-item-text">公會介紹</span>
+              <a class="dropdown-item" href="#">理事長BLAHBLAH</a>
+              <a class="dropdown-item" href="#">公會簡介</a>
+              <a class="dropdown-item" href="#">公會章程</a>
+              <a class="dropdown-item" href="#">會所介紹</a>
+            </div>
+           </li><!--下拉選單5-->           
           </ul>
         </div>
       </nav>
     </header>
-
   
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
